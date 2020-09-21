@@ -6978,10 +6978,13 @@ h1, h2, h3, h4, h5,
     color: #fff; }
   /* #sidebar.active {
     margin-left: -270px; } */
-  #sidebar h1 {
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 30px; }
+
+    #sidebar h1 {
+        margin-bottom: 20px;
+        /* font-weight: 700; */
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 21px;
+    }
     #sidebar h1 .logo {
       color: #fff; }
       #sidebar h1 .logo span {
