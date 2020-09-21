@@ -7441,13 +7441,13 @@ h5, .h5 {
   position: relative;
   margin: 0;
   padding: 0;
-  
+  left: 0%;
 }
 
 .footer .apple-card {
   width: 10vh;
   background-color: rgba(255, 255, 255, 0.027);
-  left: 0%;
+ 
  
 }
 
