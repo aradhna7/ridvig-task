@@ -7,9 +7,6 @@ import Main from './components/Main'
 
 function App() {
 
- 
-
-
   return (
     <div class="wrapper d-flex align-items-stretch">
    <Sidebar/>
