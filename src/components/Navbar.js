@@ -18,8 +18,8 @@ const Navbar = () => {
                 <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="10px" font-family="Arial" dy=".3em">1</text>
                 Sorry, your browser does not support inline SVG.
                 </svg>
-                <a href="#"><span class="fa fa-bell mr-3" style={{color:"grey"}}></span></a>{' '}
-                <i class="icon fa fa-search search-icon"></i>
+                <a href="#"><span class="fa fa-bell mr-3 " style={{color:"grey"}}></span></a>{' '}
+                <i class="icon fa fa-search search-icon " ></i>
                 
                 <input type="text" placeholder="Search.."   style={{borderRadius: "25px",paddingLeft: "39px",borderColor:"transparent", height:"38px",margin:"14px", marginLeft: "-35px"}}/>
 

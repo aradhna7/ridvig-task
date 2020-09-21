@@ -1,23 +1,25 @@
-import React,{ useCallback, useState} from 'react'
+import React,{ useCallback, useState, Fragment} from 'react'
 
 const Sidebar = () => {
 
-    const [showSidebar, setShowSidebar] = useState(false);
+	
+    const [showSidebar, setShowSidebar] = useState(true);
+
+
     // const toggleSidebar = useCallback(() => setShowSidebar(value => !value));
 
     return (
-        <div>
-            
-        {/* {showSidebar ? */}
         
-        <nav id="sidebar">
-  
- 			 {/* <div class="custom-menu">
-				<button type="button" onClick={()=> setShowSidebar(!showSidebar)} class="btn btn-primary">
-	          <i class="fa fa-bars"></i>
+        <div class="sidebar"> 
+		{showSidebar ? (
+			<nav id="sidebar" >
+  -
+ 			 <div class="custom-menu" >
+				<button type="button" onClick={()=> setShowSidebar(!showSidebar)} class="btn btn-primary goldenbutton">
+	          <i class="fas fa-chevron-left mr-3"></i>
 	          <span class="sr-only">Toggle Menu</span>
 	        </button>
-       		 </div> */}
+       		 </div>
 			<div class="p-4">
 		  		<h1><a href="index.html" class="logo" style={{color:"rgba(255, 255, 255, 0.6)"}}><i class="fas fa-info-circle"></i>{' '} Tenderfarm</a></h1>
 	        <ul class="list-unstyled components mb-5">
@@ -92,18 +94,19 @@ const Sidebar = () => {
 		
 </div>
 
-    	</nav> 
-         {/* :
-         <div class="custom-menu">
-         <button type="button" onClick={()=> setShowSidebar(!showSidebar)} class="btn btn-primary">
-      <i class="fa fa-bars"></i>
+    	</nav>) 
+          :
+         
+         <button type="button" onClick={()=> setShowSidebar(!showSidebar)} class="btn goldenbutton" style={{backgroundColor:"#239ec8", color:"white", marginTop:"56px"}}>
+      <i class="fas fa-chevron-right"></i>
        <span class="sr-only">Toggle Menu</span>
     </button>
- </div>
+ }
+ </div> 
 
 
-         } */}
-        </div>
+         
+       
     )
 }
 

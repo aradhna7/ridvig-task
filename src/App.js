@@ -8,8 +8,10 @@ import Main from './components/Main'
 function App() {
 
   return (
-    <div class="wrapper d-flex align-items-stretch">
+    <div class="wrapper d-flex flex-row align-items-stretch">
+      
    <Sidebar/>
+
     <Main/>
     </div>
   );
